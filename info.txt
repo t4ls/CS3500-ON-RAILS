@@ -1,0 +1,28 @@
+Hello,
+Your virtual machine has been created. To access it, you will need to run:
+
+ssh -p 60322 sysadmin@vps.cs.wmich.edu
+
+Port 80 is forwarded through port 60380.
+
+Port 443 is forwarded through port 60343.
+
+Your credentials are:
+
+Username: sysadmin
+
+You must be on a WMU network or using the VPN
+(https://blog.cs.wmich.edu/downloading-and-using-the-wmu-vpn/) in order to
+connect to your virtual machine.
+
+To set up ruby on rails please follow these instructions:
+https://jejsoftware.com/gitlab/railswebsecurity/railsenvironment
+
+Regards,
+WMU CS Sysadmin
+
+Hello
+
+The link i sent to you, and your whole class, about the rails script is flawed, those scripts are meant to be run in a virtual machine that is sitting on your local host, I am working on seeing if there is a way to configure the rails app to be run through the VPS out to to the CS network but in the mean time you may want to use the old tutorial we have at: 
+
+https://blog.cs.wmich.edu/vps-rails-build/
