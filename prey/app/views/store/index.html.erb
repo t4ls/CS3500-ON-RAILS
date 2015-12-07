@@ -3,6 +3,10 @@
 <% end %>
 
 <h1>Your Pragmatic Catalog</h1>
+<%= form_tag do %>
+Number values to generate: <input type='text' name='N' />
+<input type='submit'  value='Submit Type' name='submitbutton'/>
+<% end %>
 
 <% cache ['store', Product.latest] do %>
   <% @products.each do |product| %>
