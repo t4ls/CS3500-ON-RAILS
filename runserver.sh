@@ -3,12 +3,12 @@
 #Works on any machine from anywhere for dev
 #Make sure to include port number
 #Example: ./runserver 3000
-ssh -f -R 0.0.0.0:$1:localhost:$1 cclub@t4ls.duckdns.org -N
+ssh -f -R 0.0.0.0:$2:localhost:$2 cclub@t4ls.duckdns.org -N
 echo URL FOR REVERSE TUNNEL: http://t4ls.duckdns.org:$1
 if [ "$(hostname)" == "CS35F15-004" ]; then
-cd blog;sudo rails server -b 0.0.0.0 -p $1 -u
+cd $1;sudo rails server -b 0.0.0.0 -p $2 -u
 fi
 if [ "$(hostname)" != "CS35F15-004" ]; then
-cd blog;rails server -b 0.0.0.0 -p $1 -u
+cd $1;rails server -b 0.0.0.0 -p $2 -u
 fi
 

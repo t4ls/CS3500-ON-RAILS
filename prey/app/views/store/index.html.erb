@@ -8,9 +8,7 @@ Number values to generate: <input type='text' name='N' />
 <input type='submit'  value='Submit Type' name='submitbutton'/>
 <% end %>
 
-<% 
-print "Enter original price $"
-%>
+<% 'application#hello' %>
 
 <p> test <% render :text => request.raw_post %></p>
 <% cache ['store', Product.latest] do %>
