@@ -1,7 +1,7 @@
 <h2>WELCOME</h2>
 
-<%="from controller #{@test}"%>
+<%="This is where we do computers."%>
 
-<% simple_form_for @index do |f| %>
-    <%= f.input :test, placeholder: 'Enter your test' %>    
-<% end %>
+<%=link_to "Actually, here", :controller => :computers, :action => 'new' %>
+       
+
